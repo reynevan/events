@@ -1,0 +1,20 @@
+.event-thumbnail {
+	background-color: #ddd;
+	border: 1px solid black;
+	margin: 0 10px 10px 10px;
+	padding: 5px;
+	font-size: 12px;
+
+}
+
+.event-name {
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+}
+
+.event-description {
+	font-size: 14px;
+	color: green;
+	font-weight: 500;
+}
