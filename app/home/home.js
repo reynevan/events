@@ -14,7 +14,14 @@ HomeController.$inject = ['Event'];
 
 function HomeController(Event) {
     var vm = this;
-    Event.query(function(data) {
-        console.log(data);
-    });
+
+    Event.getAll().then(getSuccess, getFailed);
+
+    function getSuccess(events) {
+        vm.Events = events;
+    }
+
+    function getFailed() {
+        console.error('error');
+    }
 }
